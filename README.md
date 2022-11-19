@@ -37,6 +37,14 @@
 - Github CI
 - Optional publishing a document web site
 
+### Workflows
+
+- on PR do test and merge to main branch
+- on push do test
+- on release do publish the PS module (to Azure Artifacts Feed)
+
+Workflow events https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
+
 ## Start
 
 - Download or clone via Github
@@ -46,7 +54,7 @@
 - Test & Build locally
 - Push to github
 
-## Build
+## Manually Build
 
 After adding new files build the class and psm by calling
 

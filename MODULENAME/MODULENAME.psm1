@@ -1,7 +1,7 @@
 using module .\Class\MODULENAME.Class.psm1
 # Above needs to remain the first line to import Classes
 
-#requires -PSEdition Desktop 
+# --requires -PSEdition Desktop 
 
 #Get public and private function definition files.
 $Public = @( Get-ChildItem -Path $PSScriptRoot\Public\*.ps1 -Recurse -ErrorAction SilentlyContinue )

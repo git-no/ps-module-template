@@ -16,15 +16,14 @@
 # Make sure user MUST NOT set [MODULENAME]::Instance field.
 
 class MODULENAME {
-    # Singleton properties
 
+    # Singleton properties
     hidden static [MODULENAME] $_instance = [MODULENAME]::new()
     static [MODULENAME] $Instance = [MODULENAME]::GetInstance()
-    [Guid] $SingletonTarget = [Guid]::NewGuid()
+    hidden [Guid] $SingletonTarget = [Guid]::NewGuid()
 
 
     # Properties 
-
     [BCVersion[]] $versions = @()
     # [MODULENAMEUpdate] $update
     

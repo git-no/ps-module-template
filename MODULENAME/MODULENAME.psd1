@@ -12,7 +12,7 @@
 RootModule = 'MODULENAME.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.2'
+ModuleVersion = '1.0.9'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -69,7 +69,7 @@ DotNetFrameworkVersion = '4.0'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = @('Convert-PlainStringToEncryptedString', 
+FunctionsToExport = @('Get-MODULENAME', 'Convert-PlainStringToEncryptedString', 
                'ConvertFrom-SecureStringAsPlainText', 'ConvertTo-PsString')
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.

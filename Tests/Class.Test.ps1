@@ -1,9 +1,9 @@
 Describe "Class Function Test" {
     BeforeAll {
     }
-    Context 'New-MODULENAME' {
+    Context 'Get-MODULENAME' {
         It "by pipline value" {
-                (New-MODULENAME).GetType().Name | Should -Be "MODULENAME"
+                (Get-MODULENAME).GetType().Name | Should -Be "MODULENAME"
         }
             
     }
