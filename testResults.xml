@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="3" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2022-11-19" time="16:39:08">
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="3" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2022-11-19" time="16:49:22">
   <environment nunit-version="2.5.8.0" os-version="22.1.0" user-domain="" cwd="/Users/lukas/code/projects/ps-module-template" user="lukas" machine-name="wilde13.local" platform="Darwin" clr-version="Unknown" />
   <culture-info current-culture="de-DE" current-uiculture="de-DE" />
-  <test-suite type="TestFixture" name="Pester" executed="True" result="Success" success="True" time="0.1523" asserts="0" description="Pester">
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Success" success="True" time="0.1278" asserts="0" description="Pester">
     <results>
-      <test-suite type="TestFixture" name="/Users/lukas/code/projects/ps-module-template/Tests/Class.Test.ps1" executed="True" result="Success" success="True" time="0.0451" asserts="0" description="/Users/lukas/code/projects/ps-module-template/Tests/Class.Test.ps1">
+      <test-suite type="TestFixture" name="/Users/lukas/code/projects/ps-module-template/Tests/Class.Test.ps1" executed="True" result="Success" success="True" time="0.0523" asserts="0" description="/Users/lukas/code/projects/ps-module-template/Tests/Class.Test.ps1">
         <results>
-          <test-suite type="TestFixture" name="Class Function Test" executed="True" result="Success" success="True" time="0.0252" asserts="0" description="Class Function Test">
+          <test-suite type="TestFixture" name="Class Function Test" executed="True" result="Success" success="True" time="0.0212" asserts="0" description="Class Function Test">
             <results>
-              <test-suite type="TestFixture" name="Class Function Test.Get-MODULENAME" executed="True" result="Success" success="True" time="0.0191" asserts="0" description="Class Function Test.Get-MODULENAME">
+              <test-suite type="TestFixture" name="Class Function Test.Get-MODULENAME" executed="True" result="Success" success="True" time="0.017" asserts="0" description="Class Function Test.Get-MODULENAME">
                 <results>
-                  <test-suite type="TestFixture" name="Class Function Test.Get-MODULENAME.values" executed="True" result="Success" success="True" time="0.0151" asserts="0" description="Class Function Test.Get-MODULENAME.values">
+                  <test-suite type="TestFixture" name="Class Function Test.Get-MODULENAME.values" executed="True" result="Success" success="True" time="0.0115" asserts="0" description="Class Function Test.Get-MODULENAME.values">
                     <results>
-                      <test-case description=" returns Name" name="Class Function Test.Get-MODULENAME.values. returns Name" time="0.0107" asserts="0" success="True" result="Success" executed="True" />
+                      <test-case description=" returns Name" name="Class Function Test.Get-MODULENAME.values. returns Name" time="0.0044" asserts="0" success="True" result="Success" executed="True" />
                     </results>
                   </test-suite>
                 </results>
@@ -21,26 +21,26 @@
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="/Users/lukas/code/projects/ps-module-template/Tests/Private.Test.ps1" executed="True" result="Success" success="True" time="0.0378" asserts="0" description="/Users/lukas/code/projects/ps-module-template/Tests/Private.Test.ps1">
+      <test-suite type="TestFixture" name="/Users/lukas/code/projects/ps-module-template/Tests/Private.Test.ps1" executed="True" result="Success" success="True" time="0.031" asserts="0" description="/Users/lukas/code/projects/ps-module-template/Tests/Private.Test.ps1">
         <results>
-          <test-suite type="TestFixture" name="Private Function Test" executed="True" result="Success" success="True" time="0.0169" asserts="0" description="Private Function Test">
+          <test-suite type="TestFixture" name="Private Function Test" executed="True" result="Success" success="True" time="0.0132" asserts="0" description="Private Function Test">
             <results>
-              <test-suite type="TestFixture" name="Private Function Test.Ternary" executed="True" result="Success" success="True" time="0.0113" asserts="0" description="Private Function Test.Ternary">
+              <test-suite type="TestFixture" name="Private Function Test.Ternary" executed="True" result="Success" success="True" time="0.0099" asserts="0" description="Private Function Test.Ternary">
                 <results>
-                  <test-case description="Tenerary" name="Private Function Test.Ternary.Tenerary" time="0.007" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Tenerary" name="Private Function Test.Ternary.Tenerary" time="0.0066" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="/Users/lukas/code/projects/ps-module-template/Tests/Public.Test.ps1" executed="True" result="Success" success="True" time="0.0665" asserts="0" description="/Users/lukas/code/projects/ps-module-template/Tests/Public.Test.ps1">
+      <test-suite type="TestFixture" name="/Users/lukas/code/projects/ps-module-template/Tests/Public.Test.ps1" executed="True" result="Success" success="True" time="0.0421" asserts="0" description="/Users/lukas/code/projects/ps-module-template/Tests/Public.Test.ps1">
         <results>
-          <test-suite type="TestFixture" name="Public Function Test" executed="True" result="Success" success="True" time="0.0303" asserts="0" description="Public Function Test">
+          <test-suite type="TestFixture" name="Public Function Test" executed="True" result="Success" success="True" time="0.0193" asserts="0" description="Public Function Test">
             <results>
-              <test-suite type="TestFixture" name="Public Function Test.Public" executed="True" result="Success" success="True" time="0.0208" asserts="0" description="Public Function Test.Public">
+              <test-suite type="TestFixture" name="Public Function Test.Public" executed="True" result="Success" success="True" time="0.0115" asserts="0" description="Public Function Test.Public">
                 <results>
-                  <test-case description="1 is 1" name="Public Function Test.Public.1 is 1" time="0.0115" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="1 is 1" name="Public Function Test.Public.1 is 1" time="0.0042" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
