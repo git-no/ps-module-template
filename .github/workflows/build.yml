@@ -11,7 +11,7 @@ jobs:
 
     - name: GitVersion
       id: gitversion
-      uses: PoshCode/Actions/gitversion@v2
+      uses: PoshCode/Actions/gitversion@v1
 
     - name: Install-RequiredModules
       uses: PoshCode/Actions/install-requiredmodules@v2
