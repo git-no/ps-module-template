@@ -2,7 +2,6 @@
 
 ## todo
 
-- build testen und pfade setzen
 - test testen
 - ein testbefehl
 - lizenz aktualisieren, keine kommerzielle nutzung
@@ -14,6 +13,13 @@
 - Templae Benutzung dokumentieren
 - richtiges modul vorbereiten
 
+## Automated Workflows (by Github Actions)
+
+- Workflows by automation
+  - Pull Request review -> Merge code to main branch, test, build, versioning
+  - Module build on push
+  - Module test on push
+  - Deploy module to Azure Artifacts Feed on release
 - modul für DB Upgrades -> nutzen von VSC module?
 - modul? für schnelleres, zielsicheres, test driving programmieren (snippets, fertige module/dateien) -> eher als VSC module?
 
