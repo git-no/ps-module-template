@@ -17,13 +17,13 @@ jobs:
 
       - name: Set required Powershell modules
         id: psmodulecache
-        uses: potatoqualitee/psmodulecache@v1
+        uses: potatoqualitee/psmodulecache@v5.1
         with:
             modules-to-cache: Pester, PSSCriptAnalyzer, InvokeBuild, platyPS
 
       - name: Setup PowerShell module cache
         id: cacher
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ${{ steps.psmodulecache.outputs.modulepath }}
           key: ${{ steps.psmodulecache.outputs.keygen }}
@@ -37,7 +37,7 @@ jobs:
 
       - name: Invoke Build
         shell: pwsh
-        run: pwsh -command "Invoke-Build -File ./Helper/build.ps1 -Configuration 'Release'""
+        run: pwsh -command "Invoke-Build -File ./Helper/build.ps1 -Configuration 'Release'"
 
       - name: Perform a Pester test from the Tests.ps1 file
         shell: pwsh
