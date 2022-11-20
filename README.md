@@ -39,9 +39,15 @@
 
 ### Workflows
 
+- on new ISSUE ...
 - on PR do test and merge to main branch
-- on push do test
-- on release do publish the PS module (to Azure Artifacts Feed)
+- on PUSH do test
+
+wie erstellen, möglichst automatisch
+prerelease
+release
+
+- on RELEASE do publish the PS module (to Azure Artifacts Feed)
 
 Workflow events https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
 
@@ -86,3 +92,7 @@ https://communary.net/tag/powershell/
 https://stackoverflow.com/questions/27764394/get-valuefromremainingarguments-as-an-hashtable
 https://learn-powershell.net/2013/05/07/tips-on-implementing-pipeline-support/
 https://github.com/jasoth/MSIdentityTools/tree/94b2cc295a746263accac154924ed5e94fa5907b/src
+
+[Use an Azure Artifacts feed as a private PowerShell repository](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/private-powershell-library?view=azure-devops#connecting-to-the-feed-as-a-powershell-repo)
+
+[Install-ModuleFromGitHub](https://www.powershellgallery.com/packages/InstallModuleFromGitHub/0.3)

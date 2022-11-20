@@ -1,18 +1,52 @@
 name: Test Powershell Module with Pester
 
 on:
-  - push
   - workflow_dispatch
+  - push
 
 jobs:
   pester-test:
-    name: Pester test
+    name: Test by Pester
     runs-on: windows-latest
+    strategy:
+      fail-fast: false
+
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
 
+      - name: Set required Powershell modules
+        id: psmodulecache
+        uses: potatoqualitee/psmodulecache@v1
+        with:
+            modules-to-cache: Pester, PSSCriptAnalyzer, InvokeBuild, platyPS
+
+      - name: Setup PowerShell module cache
+        id: cacher
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.psmodulecache.outputs.modulepath }}
+          key: ${{ steps.psmodulecache.outputs.keygen }}
+
+      - name: Install required PowerShell modules
+        if: steps.cacher.outputs.cache-hit != 'true'
+        shell: pwsh
+        run: |
+          Set-PSRepository PSGallery -InstallationPolicy Trusted
+          Install-Module ${{ steps.psmodulecache.outputs.needed }} -ErrorAction Stop    
+
+      - name: Invoke Build
+        shell: pwsh
+        run: pwsh -command "Invoke-Build -File ./Helper/build.ps1 -Configuration 'Release'""
+
       - name: Perform a Pester test from the Tests.ps1 file
         shell: pwsh
         run: |
-          ./Tests/All.Tests.ps1 -Passthru
+          ./Tests/All.Tests.ps1
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v2.2.3
+        with:
+          name: module-artifact # Naming the powershell module artifact
+          path: ./Output/ # Saving the powershell module artifact to the path ./Output/
+
