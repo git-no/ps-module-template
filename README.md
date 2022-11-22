@@ -2,6 +2,7 @@
 
 ## todo
 
+- Workflows einrichten
 - test testen
 - ein testbefehl
 - lizenz aktualisieren, keine kommerzielle nutzung
@@ -12,16 +13,6 @@
 - dokumentation der Befehle, public automatisch via help, private dokumentieren, dass nicht vergessen gehen.
 - Templae Benutzung dokumentieren
 - richtiges modul vorbereiten
-
-## Automated Workflows (by Github Actions)
-
-- Workflows by automation
-  - Pull Request review -> Merge code to main branch, test, build, versioning
-  - Module build on push
-  - Module test on push
-  - Deploy module to Azure Artifacts Feed on release
-- modul für DB Upgrades -> nutzen von VSC module?
-- modul? für schnelleres, zielsicheres, test driving programmieren (snippets, fertige module/dateien) -> eher als VSC module?
 
 ## Includes
 
@@ -39,17 +30,29 @@
 
 ### Workflows
 
-- on new ISSUE ...
-- on PR do test and merge to main branch
-- on PUSH do test
-
-wie erstellen, möglichst automatisch
-prerelease
-release
-
-- on RELEASE do publish the PS module (to Azure Artifacts Feed)
+- [ ] on Issue created ...?
+- [ ] on Issue not updated x days -> close
+- [ ] on PR label change type
+- [ ] on PR created -> do build, test and label result
+- [ ] on PR from owner -> do confirm merge
+- [ ] on PR merge confirmed (&tested) -> do merge to main branch
+- [ ] on push on main branch -> deploy release to dev/prerelease
+- [ ] on ??? label commit -> create release
+- [ ] on ??? release -> deploy (to Azure Artifacts Feed or Github Packages)
 
 Workflow events https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
+
+#### Einrichtung / Voraussetzungen
+
+- ... tvd
+- envs
+
+- Workflows by automation
+
+- Pull Request review -> Merge code to main branch, test, build, versioning
+
+- modul für DB Upgrades -> nutzen von VSC module?
+- modul? für schnelleres, zielsicheres, test driving programmieren (snippets, fertige module/dateien) -> eher als VSC module?
 
 ## Start
 

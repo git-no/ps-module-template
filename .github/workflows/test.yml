@@ -43,10 +43,3 @@ jobs:
         shell: pwsh
         run: |
           ./Tests/All.Tests.ps1
-
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v2.2.3
-        with:
-          name: module-artifact # Naming the powershell module artifact
-          path: ./Output/ # Saving the powershell module artifact to the path ./Output/
-

@@ -8,7 +8,7 @@ Write-Host -Object ''
 
 Try {
     # Building class
-    & "./$TemplatePowerShellModule/Class/lib/build.ps1"
+    & (Join-Path $PSScriptRoot "Class/lib/build.ps1")
 
     # This is where the module manifest lives
     $manifestPath = "./$TemplatePowerShellModule/$TemplatePowerShellModule.psd1"
