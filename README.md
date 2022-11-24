@@ -99,3 +99,5 @@ https://github.com/jasoth/MSIdentityTools/tree/94b2cc295a746263accac154924ed5e94
 [Use an Azure Artifacts feed as a private PowerShell repository](https://learn.microsoft.com/en-us/azure/devops/artifacts/tutorials/private-powershell-library?view=azure-devops#connecting-to-the-feed-as-a-powershell-repo)
 
 [Install-ModuleFromGitHub](https://www.powershellgallery.com/packages/InstallModuleFromGitHub/0.3)
+
+[PoshCode/ModuleBuilder](https://github.com/PoshCode/ModuleBuilder)
