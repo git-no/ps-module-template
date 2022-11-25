@@ -1,14 +1,15 @@
+# https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-powershell
 name: Test PowerShell
 
 on: 
-  push:
-
+  # push:
   workflow_dispatch:
 
 jobs:
   pester-test:
     name: Pester test
     runs-on: windows-latest
+
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
